@@ -57,7 +57,14 @@
 			</ul>
 		</article>
 	</details>
-	<details class="poem-body 第一首">
+	
+	<script>$('#poem-title').click(function () {$('details.poem-title').toggleClass('poem-body-show, poem-body');$('#poem-title').toggleClass('active');});</script>
+	<script>$('.close-poem-title').click(function () {$('details.poem-title').hide("fast");$('#poem-title').toggleClass('active');});</script>
+</section>
+
+<section class="poem-container">
+	<h2 class="ptitle" id="第二首" title="第二首">第二首</h2>
+	<details class="poem-body 第二首">
 		<summary class="description">
 			Lorem ipsum dolor sit amet, <br />
 			consectetur adipiscing elit.  <br />
@@ -88,29 +95,9 @@
 			</ul>
 		</article>
 	</details>
+	
 	<script>$('#poem-title').click(function () {$('details.poem-title').toggleClass('poem-body-show, poem-body');$('#poem-title').toggleClass('active');});</script>
 	<script>$('.close-poem-title').click(function () {$('details.poem-title').hide("fast");$('#poem-title').toggleClass('active');});</script>
-</section>
-
-<!-- template section for each picture entry -->
-<section class="poem-container">
-	<h2 class="ptitle" id="image-id" title="[Title of Your Image]">[Title of Your Image]</h2>
-	<details class="poem-body image-id">
-		<summary class="description">
-			<img src="#"  title="capion or description of image" alt="description of image" width="100" height="100" />
-		</summary>
-		<p>
-			asdasadasdasda
-		</p>
-		<time class="date_duration"><abbr class="dtend" title="2011-05-01, 12:00:00 T">2011-05-01</abbr></time>
-		<article class="assoc-url">
-			<ul>
-				<li><a href="">[Title of Your Image] - Points to Online Source for Image</a></li>
-			</ul>
-		</article>
-	</details>
-	<script>$('#image-id').click(function () {$('details.image-id').toggleClass('poem-body-show, poem-body');$('#image-id').toggleClass('active');});</script>
-	<script>$('.close-image-id').click(function () {$('details.image-id').hide("fast");$('#image-id').toggleClass('active');});</script>
 </section>
 
 
