@@ -6,15 +6,15 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
-	<title>TITLE OF POETRY COLLECTION</title>
+	<title>白九诗集</title>
 	<link rel="stylesheet" type="text/css" href="arjw-poetry.css" />
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 <header>
-	<h1><a href="poetry-template.html" title="TITLE OF POETRY COLLECTION">TITLE OF POETRY COLLECTION</a></h1>
+	<h1><a href="poetry-template.html" title="白九诗集">TITLE OF POETRY COLLECTION</a></h1>
 	<details class="book-description">
-		<summary>Collection of prose and images</summary>
+		<summary>白九诗集</summary>
 	</details>
 	<nav class="controls">
 		<p><a class="show-all" title="Click to show all poems">Show All Poems</a> | <a class="hide-all" title="Click to hide all poems">Hide All Poems</a></p>
@@ -22,7 +22,9 @@
 		<script>$('a.hide-all').click(function () {$('details.poem-body').hide("fast");});</script>
 	</nav>
 </header>
-
+<?php
+      include "2.html";
+?>
 <!-- template code for each poem entry -->
 <section class="poem-container">
 	<h2 class="ptitle" id="poem-title" title="{poem title}">{poem title}</h2>
